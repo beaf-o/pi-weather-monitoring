@@ -14,7 +14,7 @@ def main():
     main_surface = pygame.display.get_surface()
 
     folders = ["webcam", "rain", "strikes"]
-    interval = 500.0 / 1000.0
+    interval = 200.0 / 1000.0
 
     s = 0
     while True:

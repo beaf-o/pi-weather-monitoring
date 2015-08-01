@@ -12,7 +12,7 @@ def main():
     strikesUrl="http://images.blitzortung.org/Images/image_b_de.png"
 
     folders = ["webcam", "rain", "strikes"]
-    maxImages = 30
+    maxImages = 40
     interval = 30
 
     i = 0
@@ -61,11 +61,11 @@ def main():
 
 		i += 1
 		if i <= maxImages:
-		    #print("[" + str(i) + "] Keep " + file)
+		    print("[" + str(i) + "] Keep " + file)
 		    continue
 		else: 
-		    #print("Remove " + file)
-		    os.unlink(file)
+		    print("Remove " + file)
+		    os.system("rm -f " + file)
 		
 	i += 1
 	time.sleep(interval)
